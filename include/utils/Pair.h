@@ -93,6 +93,6 @@ public:
 
 } // pair
 
-} // FT
+} // ft
 
 #endif

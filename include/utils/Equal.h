@@ -61,6 +61,6 @@ bool equal( InputIt1 first1, InputIt1 last1,
     return true;
 }
 
-} // FT
+} // ft
 
 #endif

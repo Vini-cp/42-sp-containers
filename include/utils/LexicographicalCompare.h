@@ -77,6 +77,6 @@ bool lexicographical_compare( InputIt1 first1, InputIt1 last1,
     return ( first1 == last1 ) && ( first2 != last2 );
 }
 
-} // FT
+} // ft
 
 #endif

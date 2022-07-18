@@ -26,6 +26,6 @@ ft::pair< T1, T2 > make_pair( T1 pFirst, T2 pSecond )
     return ft::pair< T1, T2 >( pFirst, pSecond );
 }
 
-} // FT
+} // ft
 
 #endif
