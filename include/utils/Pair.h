@@ -91,7 +91,91 @@ public:
         return *this;
     }
 
-} // pair
+}; // pair
+
+/*
+*   Creates a pair object, deducing the target type from the types of arguments.
+* 
+*   @param T1  First type.
+*   @param T2  Second type.
+*/
+template< class T1, class T2 >
+ft::pair< T1, T2 > make_pair( T1 pFirst, T2 pSecond )
+{
+    return ft::pair< T1, T2 >( pFirst, pSecond );
+}
+
+/*
+*   Tests if both elements of prPair1 and prPair2 are equal, that is, compares
+*       prPair1.first with prPair2.first and prPair1.second with prPair2.second.
+* 
+*   @param prPair1, prPair2     pairs to compare.
+*/
+template< class T1, class T2 >
+bool operator==( const ft::pair< T1, T2 >& prPair1, const ft::pair< T1, T2 >& prPair2 )
+{
+    return prPair1.first == prPair2.first && prPair1.second == prPair2.second;
+}
+
+/*
+*   Tests if both elements of prPair1 and prPair2 are equal, that is, compares
+*       prPair1.first with prPair2.first and prPair1.second with prPair2.second.
+* 
+*   @param prPair1, prPair2     pairs to compare.
+*/
+template< class T1, class T2 >
+bool operator!=( const ft::pair< T1, T2 >& prPair1, const ft::pair< T1, T2 >& prPair2 )
+{
+    return !( prPair1 == prPair2 );
+}
+
+/*
+*   Compares lhs and rhs lexicographically by operator<, that is, compares
+*       the first elements and only if they are equivalent, compares the second elements.
+* 
+*   @param prPair1, prPair2     pairs to compare.
+*/
+template< class T1, class T2 >
+bool operator<( const ft::pair< T1, T2 >& prPair1, const ft::pair< T1, T2 >& prPair2 )
+{
+    return prPair1.first < prPair2.first || ( !( prPair2.first < prPair1.first ) && prPair1.second < prPair2.second );
+}
+
+/*
+*   Compares lhs and rhs lexicographically by operator<, that is, compares
+*       the first elements and only if they are equivalent, compares the second elements.
+* 
+*   @param prPair1, prPair2     pairs to compare.
+*/
+template< class T1, class T2 >
+bool operator<=( const ft::pair< T1, T2 >& prPair1, const ft::pair< T1, T2 >& prPair2 )
+{
+    return !( prPair1 < prPair2 );
+}
+
+/*
+*   Compares lhs and rhs lexicographically by operator<, that is, compares
+*       the first elements and only if they are equivalent, compares the second elements.
+* 
+*   @param prPair1, prPair2     pairs to compare.
+*/
+template< class T1, class T2 >
+bool operator>( const ft::pair< T1, T2 >& prPair1, const ft::pair< T1, T2 >& prPair2 )
+{
+return prPair1 < prPair2;
+}
+
+/*
+*   Compares lhs and rhs lexicographically by operator<, that is, compares
+*       the first elements and only if they are equivalent, compares the second elements.
+* 
+*   @param prPair1, prPair2     pairs to compare.
+*/
+template< class T1, class T2 >
+bool operator>=( const ft::pair< T1, T2 >& prPair1, const ft::pair< T1, T2 >& prPair2 )
+{
+    return !( prPair1 < prPair2 );
+}
 
 } // ft
 
