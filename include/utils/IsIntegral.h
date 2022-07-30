@@ -4,8 +4,6 @@
 #ifndef IS_INTEGRAL_H
 #define IS_INTEGRAL_H
 
-#include "RemoveCV.h"
-
 namespace ft
 {
 
