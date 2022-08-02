@@ -7,6 +7,7 @@ int main()
 {
     IsIntegralTests();
     PairTests();
+    LexicographicalCompareTests();
 
     return 0;
 }

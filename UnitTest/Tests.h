@@ -6,5 +6,6 @@
 
 void IsIntegralTests();
 void PairTests();
+void LexicographicalCompareTests();
 
 #endif

@@ -2,7 +2,8 @@ NAME 		:= containers
 
 SRCS		:= src/main.cpp \
 			   UnitTest/utils/IsIntegralTest.cpp \
-			   UnitTest/utils/PairTest.cpp
+			   UnitTest/utils/PairTest.cpp \
+			   UnitTest/utils/LexicographicalCompareTest.cpp
 
 OBJ_FOLDER	:= obj
 
