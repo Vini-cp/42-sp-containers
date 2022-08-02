@@ -1,3 +1,6 @@
+// Author: vcordeir <vcordeir@student.42sp.org.br>
+// 42 SP
+
 #include "../../include/utils/Pair.h"
 
 #include <assert.h>
@@ -16,7 +19,7 @@ std::ostream& operator<<( std::ostream& os, const ft::pair< T, U >& prPair )
 
 void PairTests()
 {
-    std::cout << std::endl << "-------------------- Pair Test -------------------" << std::endl << std::endl ;
+    std::cout << std::endl << "-------------------- Pair Test -------------------" << std::endl << std::endl;
     ConstructorTest();
     OperatorEqualTest();
     MakePairTest();
