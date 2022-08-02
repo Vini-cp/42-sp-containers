@@ -150,7 +150,7 @@ bool operator<( const ft::pair< T1, T2 >& prPair1, const ft::pair< T1, T2 >& prP
 template< class T1, class T2 >
 bool operator<=( const ft::pair< T1, T2 >& prPair1, const ft::pair< T1, T2 >& prPair2 )
 {
-    return !( prPair1 < prPair2 );
+    return !( prPair2 < prPair1 );
 }
 
 /*
@@ -162,7 +162,7 @@ bool operator<=( const ft::pair< T1, T2 >& prPair1, const ft::pair< T1, T2 >& pr
 template< class T1, class T2 >
 bool operator>( const ft::pair< T1, T2 >& prPair1, const ft::pair< T1, T2 >& prPair2 )
 {
-return prPair1 < prPair2;
+return prPair2 < prPair1;
 }
 
 /*
