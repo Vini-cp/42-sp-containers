@@ -1,6 +1,8 @@
 NAME 		:= containers
 
-SRCS		:= src/main.cpp
+SRCS		:= src/main.cpp \
+			   UnitTest/utils/IsIntegralTest.cpp \
+			   UnitTest/utils/PairTest.cpp
 
 OBJ_FOLDER	:= obj
 
