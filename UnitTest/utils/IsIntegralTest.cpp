@@ -6,7 +6,6 @@
 #include <assert.h>
 #include <iostream>
 #include <iomanip>
-#include <type_traits>
  
 class A {};
 
@@ -20,15 +19,10 @@ T f(T i)
  
 #define SHOW(...) std::cout << std::setw(39) << #__VA_ARGS__ << " == " << __VA_ARGS__ << '\n'
  
-int main()
+void IsIntegralTests()
 {
-    assert( ft::is_integral< A >::value == std::is_integral< A >::value );
-    assert( ft::is_integral< float >::value == std::is_integral< float >::value );
-    assert( ft::is_integral< B >::value == std::is_integral< B >::value );
-    assert( ft::is_integral< signed char >::value == std::is_integral< signed char >::value );
-    assert( ft::is_integral< int >::value == std::is_integral< int >::value );
-    assert( ft::is_integral< bool >::value == std::is_integral< bool >::value );
-
+    std::cout << std::endl << "----------------- IsIntegral Test ----------------" << std::endl << std::endl;
+    
     std::cout << std::boolalpha;
     SHOW( ft::is_integral< A >::value );
     SHOW( ft::is_integral< float >::value );
@@ -36,4 +30,6 @@ int main()
     SHOW( ft::is_integral< signed char >::value );
     SHOW( ft::is_integral< int >::value );
     SHOW( ft::is_integral< bool >::value );
+
+    std::cout << std::endl << "--------------------------------------------------" << std::endl;
 }
